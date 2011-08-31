@@ -2,4 +2,18 @@
 # See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
-  hello: "Hello world"
+    formtastic:
+      labels:
+        product:
+          title: "Choose a title..."
+          description: "Write something..."
+          image_url: 'Url for image'
+          price: 'price'
+          edit:
+            title: "Edit title"
+      hints:
+        product:
+          title: "Choose a good title for you post."
+          description: "Write something inspiring here."
+          image_url: 'Write url for image'
+          price: 'Price for product'

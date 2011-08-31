@@ -1,0 +1,19 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+ru:
+    formtastic:
+      labels:
+        product:
+          title: "Выберите название"
+          description: "Напишите что-нибудь"
+          image_url: 'Путь к картинке'
+          price: 'Цена'
+          edit:
+            title: "Отредактируйте название"
+      hints:
+        product:
+          title: "Выберите его интересным"
+          description: "Напишите что-нибудь"
+          image_url: 'Только корректные картинки'
+          price: 'Цена с 2 знаками после запятой'

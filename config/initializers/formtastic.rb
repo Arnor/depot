@@ -80,3 +80,4 @@
 # Formtastic::SemanticFormHelper.builder = MyCustomBuilder
 
 Formtastic::SemanticFormBuilder.inline_errors = :none  
+Formtastic::SemanticFormBuilder.i18n_lookups_by_default = true
