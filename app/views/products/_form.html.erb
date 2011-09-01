@@ -1,9 +1,21 @@
-<%= semantic_form_for(@product) do |f| %>
+<%= semantic_form_for(@product, :html => {:multipart => true}) do |f| %>
   <%= f.error_messages %> 
   <%= f.inputs do %>  
     <%= f.input :title, :required => true %>  
     <%= f.input :description, :required => true, :rows => 5 %>  
-    <%= f.input :image_url, :required => true %>  
+    
+    <li class="text required" id="product_image_url_input">
+    	<%= f.label :image_url %>
+    	<%= f.file_field :image_url, :required => true %>
+    	<%= f.hidden_field :retained_image_url %>
+		<%= image_tag @product.image_url.thumb('100x100').url if @product.image_url_uid %>
+    </li>
+    
+    <li class="text" id="product_remove_image_url_input">
+    	<%= f.label :remove_image_url %>
+	    <%= f.check_box :remove_image_url %>
+    </li>
+    
     <%= f.input :price, :required => true %>  
   <% end %> 
   <%= f.buttons %>

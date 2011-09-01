@@ -8,6 +8,7 @@ gem 'rails', '3.0.10'
 gem 'mysql2', '~> 0.2.11'
 gem 'formtastic'
 gem 'dynamic_form'
+gem 'dragonfly'
 
 # Use unicorn as the web server
 # gem 'unicorn'
